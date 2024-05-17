@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; /* Hitam lembut */
+    color: #ff4d4d; /* Merah lembut */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.content {
+    text-align: left;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff4d4d; /* Merah lembut */
+    color: #1a1a1a; /* Hitam lembut */
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 9999; /* Pastikan tombol tetap di atas konten */
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff6666; /* Warna merah yang lebih cerah saat hover */
+}
+
+.download-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4caf50; /* Hijau */
+    color: #1a1a1a; /* Hitam lembut */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #66bb6a; /* Warna hijau yang lebih cerah saat hover */
+}
+
+
+/* Gaya CSS tambahan untuk tampilan seluler */
+
+/* Pengaturan umum untuk tampilan seluler */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .download-button {
+        width: 100%;
+        font-size: 1.5em;
+        padding: 15px 20px;
+    }
+}
+
+/* Pengaturan khusus untuk tombol di tampilan seluler */
+@media only screen and (max-width: 400px) {
+    button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
