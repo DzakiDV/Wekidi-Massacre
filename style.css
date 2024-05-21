@@ -6,7 +6,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1a1a1a; /* Hitam lembut */
-    color: #ff4d4d; /* Merah lembut */
     font-family: Arial, sans-serif;
 }
 
@@ -27,6 +26,10 @@ img {
 
 h1 {
     font-size: 3em;
+    color: #ff4d4d; /* Merah lembut */
+}
+h2 {
+    color: #ffffff; /* Merah lembut */
 }
 
 p {
